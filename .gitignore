@@ -15,3 +15,5 @@ assets/images/tumisu-blog-7101692.jpg
 
 # Unused leftover template reference file (unedited Seonex template, not linked from the site)
 services-2.html
+.vercel
+.env*
