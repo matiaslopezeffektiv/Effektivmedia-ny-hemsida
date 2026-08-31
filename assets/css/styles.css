@@ -11880,6 +11880,11 @@ form .form-content {
   z-index: 0;
   pointer-events: none;
   user-select: none;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+.case-card:hover .monogram {
+  transform: scale(1.12) rotate(-6deg);
+  color: var(--color-border-7);
 }
 .case-card .case-card-body {
   position: relative;
