@@ -1,0 +1,259 @@
+@use "../abstracts/index" as *;
+
+/* Typography
+============================================================== */
+
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-main;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    // color: #F9F9F9;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $font-main;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    // color: var(--main);
+}
+
+h1,
+.h1 {
+    font-size: clamp(48px, 8.33vw, 100px) !important;
+    line-height: clamp(56px, 8.33vw, 100px) !important;
+}
+
+h2,
+.h2 {
+    font-size: clamp(32px, 5.42vw, 65px) !important;
+    line-height: clamp(36px, 5.83vw, 70px) !important;
+}
+
+h3,
+.h3 {
+    font-size: clamp(25px, 2.5vw, 30px) !important;
+    line-height: clamp(26px, 3.33vw, 40px) !important;
+}
+
+h4,
+.h4 {
+    font-size: clamp(22px, 2.25vw, 27px) !important;
+    line-height: clamp(22px, 2.25vw, 27px) !important;
+}
+
+h5,
+.h5 {
+    font-size: clamp(20px, 2vw, 24px) !important;
+    line-height: clamp(22px, 2.42vw, 29px) !important;
+}
+
+h6,
+.h6 {
+    font-size: clamp(20px, 1.83vw, 22px) !important;
+    line-height: clamp(20px, 2.5vw, 30px) !important;
+}
+
+/* Text Design */
+
+.text-body-1 {
+    font-size: clamp(16px, 1.67vw, 20px) !important;
+    line-height: clamp(22px, 2vw, 24px) !important;
+}
+
+.text-body-2 {
+    font-size: 18px !important;
+    line-height: 30px !important;
+
+    @include res(md) {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+}
+
+.text-body-3 {
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.text-body-4 {
+    font-size: clamp(22px, 2.67vw, 32px);
+    line-height: clamp(26px, 3.33vw, 40px);
+}
+
+.text-caption-2 {
+    font-size: 14px;
+    line-height: 100%;
+}
+
+
+.text-caption {
+    font-size: 13px;
+    line-height: 100%;
+}
+
+.ff-2 {
+    font-family: $font-main2;
+}
+
+.fw-4 {
+    font-weight: 400 !important;
+}
+
+.fw-5 {
+    font-weight: 500 !important;
+}
+
+.fw-6 {
+    font-weight: 600 !important;
+}
+
+.fw-7 {
+    font-weight: 700 !important;
+}
+
+.fw-8 {
+    font-weight: 800 !important;
+}
+
+/* Font custom */
+
+/* Font size */
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-35 {
+    font-size: clamp(20px, 2.92vw, 35px) !important;
+}
+
+.fs-40 {
+    font-size: clamp(23px, 3.33vw, 40px) !important;
+}
+
+.fs-50 {
+    font-size: clamp(24px, 4.17vw, 50px) !important;
+}
+
+.fs-55 {
+    font-size: clamp(28px, 4.58vw, 55px) !important;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-85 {
+    font-size: clamp(36px, 5.9vw + 14px, 85px) !important;
+}
+
+.fs-130 {
+    font-size: clamp(48px, 6.77vw, 130px) !important;
+}
+
+.fs-170 {
+    font-size: clamp(50px, 8.95vw, 170px) !important;
+}
+
+.fs-200 {
+    font-size: clamp(55px, 16.67vw, 200px) !important;
+}
+
+.fs-210 {
+    font-size: clamp(55px, 11.05vw, 210px) !important;
+}
+
+.fs-250 {
+    font-size: clamp(55px, 14.36vw, 250px) !important;
+}
+
+/* Line height */
+
+.lh-24 {
+    line-height: 24px !important;
+}
+
+.lh-28 {
+    line-height: clamp(20px, 2.65vw, 28px) !important;
+}
+
+
+.lh-30 {
+    line-height: clamp(22px, 2.67vw, 30px) !important;
+}
+
+.lh-32 {
+    line-height: clamp(24px, 2.67vw, 32px) !important;
+}
+
+.lh-35 {
+    line-height: clamp(24px, 2.92vw, 35px) !important;
+}
+
+.lh-36 {
+    line-height: clamp(24px, 3vw, 36px) !important;
+}
+
+
+.lh-50 {
+    line-height: clamp(29px, 4.17vw, 50px) !important;
+}
+
+.lh-60 {
+    line-height: clamp(32px, 5vw, 60px) !important;
+}
+
+.lh-65 {
+    line-height: clamp(40px, 5.42vw, 65px) !important;
+}
+
+.lh-70 {
+    line-height: clamp(36px, 5.83vw, 70px) !important;
+}
+
+.lh-120 {
+    line-height: clamp(50px, 6.25vw, 120px);
+}
+
+.lh-300 {
+    line-height: clamp(76px, 20.83vw, 300px) !important;
+}
+
+
+.lh-100 {
+    line-height: 100% !important;
+}
+
+/* Responsive */
+@include res(xxl, min) {}
+
+@include res(xl, min) {}
+
+@include res(lg, min) {}

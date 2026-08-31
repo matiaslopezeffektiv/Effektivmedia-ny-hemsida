@@ -1,0 +1,738 @@
+@use "../abstracts/index" as *;
+
+/* General
+============================================================== */
+
+.flat-spacing-1 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-2 {
+    margin-top: 0;
+    margin-bottom: 100px;
+
+    @include res(xxl) {
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    @include res(lg) {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+}
+
+.flat-spacing-3 {
+    padding-top: 0;
+    padding-bottom: 130px;
+
+    @include res(xxl) {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-4 {
+    padding-top: 130px;
+    padding-bottom: 77px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-5 {
+    padding-top: 130px;
+    padding-bottom: 170px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-6 {
+    padding-top: 130px;
+    padding-bottom: 100px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-7 {
+    padding-top: 130px;
+    padding-bottom: 0;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+}
+
+.flat-spacing-7 {
+    padding-top: 130px;
+    padding-bottom: 0;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+}
+
+.flat-spacing-8 {
+    padding-top: 130px;
+    padding-bottom: 115px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-9 {
+    padding-top: 100px;
+    padding-bottom: 130px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-10 {
+    padding-top: 0;
+    padding-bottom: 126px;
+
+    @include res(xxl) {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-11 {
+    padding-top: 165px;
+    padding-bottom: 130px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.flat-spacing-12 {
+    margin-top: 0;
+    margin-bottom: 85px;
+
+    @include res(xxl) {
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    @include res(lg) {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+}
+
+.flat-spacing-13 {
+    padding-top: 115px;
+    padding-bottom: 130px;
+
+    @include res(xxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include res(lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+
+.mw-762 {
+    max-width: 762px !important;
+    width: 100% !important;
+}
+
+/* Margin */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+
+.mt-18 {
+    margin-top: 15px;
+
+    @include res(lg, min) {
+        margin-top: 18px !important;
+
+    }
+}
+
+.mt-20 {
+    margin-top: 15px;
+
+    @include res(lg, min) {
+        margin-top: 20px !important;
+
+    }
+}
+
+.mt-xl-20 {
+    @include res(xl, min) {
+        margin-top: 20px !important;
+
+    }
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-47 {
+    margin-top: 47px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px !important;
+}
+
+.mt-100 {
+    margin-top: 100px;
+
+    @include res(xxl) {
+        margin-top: 80px;
+    }
+
+    @include res(lg) {
+        margin-top: 60px;
+    }
+}
+
+.mb-7 {
+    margin-bottom: 7px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-13 {
+    margin-bottom: 12px;
+}
+
+.mb-14 {
+    margin-bottom: 14px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-17 {
+    margin-bottom: 17px;
+}
+
+.mb-18 {
+    margin-bottom: 18px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-21 {
+    margin-bottom: 21px;
+}
+
+.mb-22 {
+    margin-bottom: 22px;
+}
+
+.mb-24 {
+    margin-bottom: 24px !important;
+}
+
+.mb-25 {
+    margin-bottom: 25px !important;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-34 {
+    margin-bottom: 34px;
+}
+
+.mb-37 {
+    margin-bottom: 37px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-53 {
+    margin-bottom: 53px;
+}
+
+.mb-lg-54 {
+    margin-bottom: 30px;
+
+    @include res(lg, min) {
+        margin-bottom: 54px;
+    }
+}
+
+.mb-xl-50 {
+    margin-bottom: 30px;
+
+    @include res(xl, min) {
+        margin-bottom: 50px;
+    }
+}
+
+.mb-xl-97 {
+    margin-bottom: 30px;
+
+    @include res(xl, min) {
+        margin-bottom: 97px;
+    }
+}
+
+.mb-xl-100 {
+    margin-bottom: 30px;
+
+    @include res(xl, min) {
+        margin-bottom: 100px;
+    }
+}
+
+
+
+.mb-58 {
+    margin-bottom: 58px;
+}
+
+.mb-68 {
+    margin-bottom: 30px;
+
+    @include res(lg, min) {
+        margin-bottom: 68px !important;
+    }
+}
+
+.mb-70 {
+    margin-bottom: 30px;
+
+    @include res(lg, min) {
+        margin-bottom: 70px !important;
+    }
+}
+
+.mb-72 {
+    margin-bottom: 30px;
+
+    @include res(lg, min) {
+        margin-bottom: 72px !important;
+    }
+}
+
+
+.mb-74 {
+    margin-bottom: 30px;
+
+    @include res(lg, min) {
+        margin-bottom: 74px !important;
+    }
+}
+
+.mb-77 {
+    margin-bottom: 30px;
+
+    @include res(lg, min) {
+        margin-bottom: 77px !important;
+    }
+}
+
+
+.mb-104 {
+    margin-bottom: 104px;
+
+    @include res(xxl) {
+        margin-bottom: 80px;
+    }
+
+    @include res(lg) {
+        margin-bottom: 60px;
+    }
+}
+
+
+/* Padding */
+
+.pb-57{
+    padding-bottom: 57px;
+}
+
+/* Gap */
+
+.g-7 {
+    gap: 7px !important;
+}
+
+.g-8 {
+    gap: 8px !important;
+}
+
+
+.g-10 {
+    gap: 10px !important;
+}
+
+.g-12 {
+    gap: 12px !important;
+}
+
+
+.g-15 {
+    gap: 15px !important;
+}
+
+
+.g-20 {
+    gap: 20px !important;
+}
+
+.g-28 {
+    gap: 28px !important;
+}
+
+.g-30 {
+    gap: 30px;
+}
+
+.g-40 {
+    gap: 40px !important;
+}
+
+.g-50 {
+    gap: 30px;
+
+    @include res(lg, min) {
+        gap: 50px !important;
+    }
+}
+
+.g-60 {
+    gap: 30px;
+
+    @include res(lg, min) {
+        gap: 60px !important;
+    }
+}
+
+.g-70 {
+    gap: 30px;
+
+    @include res(lg, min) {
+        gap: 70px !important;
+    }
+}
+
+.g-100 {
+    gap: 100px;
+}
+
+.rg-8 {
+    row-gap: 8px !important;
+}
+
+.rg-15 {
+    row-gap: 15px !important;
+}
+
+.rg-30 {
+    row-gap: 30px !important;
+}
+
+.rg-50 {
+    row-gap: 50px !important;
+}
+
+.rg-70 {
+    row-gap: 30px;
+
+    @include res(lg, min) {
+        row-gap: 70px !important;
+    }
+}
+
+.color-dt-light {
+    color: var(--digital-marketing-light);
+}
+
+.color-white {
+    color: var(--white) !important;
+}
+
+.color-text-1 {
+    color: var(--color-text-1) !important;
+}
+
+.color-text-3 {
+    color: var(--color-text-3);
+}
+
+.color-paragraph {
+    color: var(--paragraph) !important;
+}
+
+.color-dt-black {
+    color: var(--digital-marketing-black) !important;
+}
+
+.color-dt-blue {
+    color: var(--digital-marketing-blue) !important;
+}
+
+.color-seo-purple {
+    color: var(--seo-purple);
+}
+
+.color-seo-black {
+    color: var(--seo-black) !important;
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.color-ba-light-green {
+    color: var(--branding-agency-light-green) !important;
+}
+
+.color-sm-blue {
+    color: var(--seo-marketing-blue) !important;
+}
+
+.bg-color-dt-gray {
+    background-color: var(--digital-marketing-gray);
+}
+
+.bg-color-seo-gray-dark {
+    background-color: var(--seo-gray-dark);
+}
+
+.bg-seo-black {
+    background-color: var(--seo-black) !important;
+}
+
+.bg-color-sm-gray {
+    background-color: var(--seo-marketing-gray) !important;
+}
+
+
+.letter-space--2 {
+    letter-spacing: -0.02em;
+}
+
+.letter-space--3 {
+    letter-spacing: -0.03em;
+}
+
+.letter-space--5 {
+    letter-spacing: -0.05em;
+}
+
+.letter-space--7 {
+    letter-spacing: -0.07em;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+/*-- Responsive --*/
+@include res(ssm, min) {
+    .d-ssm-inline-flex {
+        display: inline-flex !important;
+    }
+
+    .d-ssm-block {
+        display: block !important;
+    }
+}
+
+@include res(sm, min) {
+    .gap-sm-24 {
+        gap: 24px !important;
+    }
+}
+
+@include res(md, min) {}
+
+@include res(lg, min) {
+    .h-lg-100 {
+        height: 100% !important;
+    }
+}
+
+@include res(xl, min) {
+    .gap-xl-20 {
+        gap: 20px !important;
+    }
+
+    .row-gap-xl-32 {
+        row-gap: 32px !important;
+    }
+
+    .mt-xl-20 {
+        margin-top: 20px !important;
+    }
+}
+
+@include res(xxl, min) {
+    .h-xxl-60 {
+        height: 60px !important;
+    }
+}
+
+@include res(xxl) {
+    .xxl-hide {
+        display: none !important;
+    }
+}
+
+@include res(xl) {
+    .xl-hide {
+        display: none !important;
+    }
+}
+
+
+
+@include res(lg) {
+    .lg-hide {
+        display: none !important;
+    }
+}
+
+@include res(md) {
+    .md-mb-20 {
+        margin-bottom: 20px;
+    }
+
+    .md-mb-30 {
+        margin-bottom: 30px;
+    }
+
+    .md-hide {
+        display: none !important;
+    }
+
+    .md-mt-0 {
+        margin-top: 0 !important;
+    }
+}
+
+@include res(sm) {
+    .sm-hide {
+        display: none !important;
+    }
+}

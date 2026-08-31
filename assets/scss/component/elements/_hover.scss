@@ -1,0 +1,25 @@
+@use "../../abstracts/index" as *;
+
+.hover-img {
+    .image {
+        overflow: hidden;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: opacity 0.5s ease, transform 1.5s cubic-bezier(0, 0, 0.44, 1.18);
+            transition: opacity 0.5s ease, transform 1.5s cubic-bezier(0, 0, 0.44, 1.18);
+        }
+    }
+
+    &:hover {
+        .image {
+            >img {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}

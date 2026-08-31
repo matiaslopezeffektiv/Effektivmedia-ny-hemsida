@@ -1,0 +1,605 @@
+@use "../../abstracts/index" as *;
+
+
+.tf-btn {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+
+    .text-btn {
+        @include flex(center, center);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 100%;
+        padding: 14px 25px 12px;
+        border: 1px solid transparent;
+        background-color: var(--white);
+        color: var(--digital-marketing-black);
+        border-radius: 30px;
+        text-transform: uppercase;
+        @include transition3;
+    }
+
+    .icon-btn {
+        font-size: 18px;
+        width: 42px;
+        height: 42px;
+        @include flex(center, center);
+        border-radius: 50%;
+        background-color: var(--white);
+        color: var(--digital-marketing-black);
+        @include transition3;
+        border: 1px solid transparent;
+
+
+    }
+
+    &:hover {
+        .text-btn {
+            background-color: transparent;
+            border-color: var(--white);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: transparent;
+            border-color: var(--white);
+            color: var(--white);
+            transform: rotate(45deg);
+        }
+    }
+
+    &.style-big {
+        .text-btn {
+            padding: 18px 30px 16px;
+        }
+
+        .icon-btn {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &.style-color-dt-blue {
+        .text-btn {
+            background-color: var(--digital-marketing-blue);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--digital-marketing-blue);
+            color: var(--white)
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--digital-marketing-blue);
+                color: var(--digital-marketing-blue);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--digital-marketing-blue);
+                color: var(--digital-marketing-blue)
+            }
+        }
+
+    }
+
+    &.style-color-dt-light {
+        .text-btn {
+            background-color: var(--digital-marketing-light);
+            color: var(--digital-marketing-black);
+        }
+
+        .icon-btn {
+            background-color: var(--digital-marketing-light);
+            color: var(--digital-marketing-black);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--digital-marketing-light);
+                color: var(--digital-marketing-light);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--digital-marketing-light);
+                color: var(--digital-marketing-light);
+            }
+        }
+
+    }
+
+    &.style-color-dt-black {
+        .text-btn {
+            background-color: var(--digital-marketing-black);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--digital-marketing-black);
+            color: var(--white);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--digital-marketing-black);
+                color: var(--digital-marketing-black);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--digital-marketing-black);
+                color: var(--digital-marketing-black);
+            }
+        }
+
+    }
+
+    &.style-color-seo-purple {
+        .text-btn {
+            background-color: var(--seo-purple);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--seo-purple);
+            color: var(--white);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--seo-purple);
+                color: var(--seo-purple);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--seo-purple);
+                color: var(--seo-purple);
+            }
+        }
+    }
+
+    &.style-bg-color-seo-black {
+        .text-btn {
+            background-color: var(--seo-black);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--seo-black);
+            color: var(--white);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--seo-black);
+                color: var(--seo-black);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--seo-black);
+                color: var(--seo-black);
+            }
+        }
+    }
+
+    &.style-border {
+        .text-btn {
+            background-color: transparent;
+            border-color: var(--color-border-1);
+            color: var(--paragraph);
+        }
+
+        .icon-btn {
+            background-color: transparent;
+            border-color: var(--color-border-1);
+            color: var(--paragraph);
+        }
+
+        &:hover {
+
+            .text-btn {
+                background-color: var(--digital-marketing-blue);
+                border-color: var(--digital-marketing-blue);
+                color: var(--white);
+            }
+
+            .icon-btn {
+                background-color: var(--digital-marketing-blue);
+                border-color: var(--digital-marketing-blue);
+                color: var(--white);
+            }
+
+        }
+
+        &.border-color-4 {
+            .text-btn {
+                border-color: var(--color-border-4);
+            }
+
+            .icon-btn {
+                border-color: var(--color-border-4);
+            }
+
+            &:hover {
+
+                .text-btn {
+                    background-color: var(--branding-agency-purple);
+                    border-color: var(--branding-agency-purple);
+                }
+
+                .icon-btn {
+                    background-color: var(--branding-agency-purple);
+                    border-color: var(--branding-agency-purple);
+                }
+
+            }
+        }
+
+        &.border-color-8 {
+            .text-btn {
+                border-color: var(--color-border-8);
+            }
+
+            .icon-btn {
+                border-color: var(--color-border-8);
+            }
+
+            &:hover {
+
+                .text-btn {
+                    background-color: var(--seo-marketing-purple);
+                    border-color: var(--seo-marketing-purple);
+                }
+
+                .icon-btn {
+                    background-color: var(--seo-marketing-purple);
+                    border-color: var(--seo-marketing-purple);
+                }
+
+            }
+        }
+    }
+
+    &.style-2 {
+        gap: 10px;
+        color: var(--paragraph);
+        max-width: max-content;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        span {
+            display: block;
+        }
+
+        i {
+            color: var(--paragraph);
+            @include transition3;
+        }
+
+        &:hover {
+            color: var(--digital-marketing-black);
+
+            i {
+                color: var(--digital-marketing-black);
+            }
+        }
+    }
+
+    &.style-color-seo-black {
+        color: var(--seo-black);
+
+        i {
+            color: var(--seo-black);
+        }
+
+        &:hover {
+            color: var(--seo-purple);
+
+            i {
+                color: var(--seo-purple);
+            }
+        }
+    }
+
+    &.style-color-white {
+        color: var(--white);
+
+        i {
+            color: var(--white);
+        }
+
+        &:hover {
+            color: var(--branding-agency-purple);
+
+            i {
+                color: var(--branding-agency-purple);
+            }
+        }
+    }
+
+    &.style-bg-color-ba-purple {
+        .text-btn {
+            background-color: var(--branding-agency-purple);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--branding-agency-purple);
+            color: var(--white);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--branding-agency-purple);
+                color: var(--branding-agency-purple);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--branding-agency-purple);
+                color: var(--branding-agency-purple);
+            }
+        }
+    }
+
+    &.style-bg-color-ba-light-green {
+        .text-btn {
+            background-color: var(--branding-agency-light-green);
+            color: var(--black);
+        }
+
+        .icon-btn {
+            background-color: var(--branding-agency-light-green);
+            color: var(--black);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--branding-agency-light-green);
+                color: var(--branding-agency-light-green);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--branding-agency-light-green);
+                color: var(--branding-agency-light-green);
+            }
+        }
+    }
+
+    &.style-sm-color-purple {
+        .text-btn {
+            background-color: var(--seo-marketing-purple);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--seo-marketing-purple);
+            color: var(--white);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--seo-marketing-purple);
+                color: var(--seo-marketing-purple);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--seo-marketing-purple);
+                color: var(--seo-marketing-purple);
+            }
+        }
+    }
+
+    &.style-sm-color-pink {
+        .text-btn {
+            background-color: var(--seo-marketing-pink);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--seo-marketing-pink);
+            color: var(--white);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--seo-marketing-pink);
+                color: var(--seo-marketing-pink);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--seo-marketing-pink);
+                color: var(--seo-marketing-pink);
+            }
+        }
+    }
+
+    &.style-sm-color-blue {
+        .text-btn {
+            background-color: var(--seo-marketing-blue);
+            color: var(--white);
+        }
+
+        .icon-btn {
+            background-color: var(--seo-marketing-blue);
+            color: var(--white);
+        }
+
+        &:hover {
+            .text-btn {
+                background-color: transparent;
+                border-color: var(--seo-marketing-blue);
+                color: var(--seo-marketing-blue);
+            }
+
+            .icon-btn {
+                background-color: transparent;
+                border-color: var(--seo-marketing-blue);
+                color: var(--seo-marketing-blue);
+            }
+        }
+    }
+
+    &.style-full-w {
+        max-width: 100%;
+
+        .text-btn {
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+            flex: 1;
+        }
+    }
+}
+
+.tf-btn-sidebar {
+    @include flex(center, center);
+    height: 100%;
+
+    i {
+        color: var(--white);
+        font-size: 13px;
+    }
+
+    &.style-seo-black {
+        i {
+            color: var(--seo-black);
+        }
+    }
+
+    &.style-dt-black {
+        i {
+            color: var(--digital-marketing-black);
+        }
+    }
+}
+
+.link-btn {
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--digital-marketing-light);
+    position: relative;
+
+    .icon-btn {
+        font-size: 30px;
+        color: var(--digital-marketing-black);
+        position: relative;
+    }
+
+    .text-btn {
+        font-size: 24px;
+        line-height: 100%;
+        font-weight: 600;
+        color: var(--digital-marketing-black);
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        background-color: var(--white);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        @include transition3;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.fillter-btn {
+    &.style-fixed {
+        position: fixed;
+        padding: 7px;
+        top: 50%;
+        right: 0;
+        z-index: 999;
+        border-radius: 5px 0 0 5px;
+        background-color: var(--white);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        i {
+            font-size: 24px;
+            color: var(--digital-marketing-black);
+        }
+    }
+}
+
+.btn-add {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-border-1);
+    border-radius: 10px;
+    @include flex(center, center);
+    margin-left: auto;
+    margin-right: auto;
+
+    i {
+        color: var(--paragraph);
+    }
+}
+
+.navigation-arrows {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .arrow {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid var(--color-border-2);
+        @include flex(center, center);
+    }
+}
+
+.btn-3 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    max-width: max-content;
+
+    span {
+        text-decoration-line: underline;
+        text-decoration-color: var(--black);
+        text-underline-offset: 1px;
+    }
+
+    i {
+        font-size: 20px;
+        color: var(--black);
+    }
+}

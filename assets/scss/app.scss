@@ -1,0 +1,47 @@
+/* ---------------------------------------------------------
+    * Name: Seonex | SEO/Marketing HTML Template
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+    
+    * Reset
+    * Typography
+    * Custom Class
+
+    * Components
+        ** Layout
+        ** Header
+        ** Blog
+        ** Form
+        ** Animation
+        ** Hover
+        ** Box Icon
+        ** Popup
+        ** Tab
+        ** Go Top
+        ** Button
+        ** Card
+        ** Section
+        ** Slider
+        ** Testimonial
+        ** Widget
+        ** Shop
+        ** Product
+        ** Nice Select
+        ** Lookbook
+        ** Accordion
+        ** Footer
+ ------------------------------------------------------------------------------ */
+
+/*--------- Abstracts variable --------- */
+@use "abstracts/index"as abstract;
+
+/*------------ Core CSS ------------ */
+@use "core/reset"as reset;
+@use "core/typography"as typography;
+@use "core/classes"as customClass;
+
+/*------------ Component ------------ */
+@use "component/index"as component;

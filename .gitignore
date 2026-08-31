@@ -1,0 +1,17 @@
+.DS_Store
+
+# Unused raw source images (full-res originals; optimized copies live under assets/images/stock/, /case/, /section/)
+assets/images/AdobeStock_197066428.jpeg
+assets/images/AdobeStock_271171318.jpeg
+assets/images/AdobeStock_286819086_Editorial_Use_Only.jpeg
+assets/images/AdobeStock_295308879.jpeg
+assets/images/AdobeStock_431676275_Editorial_Use_Only.jpeg
+assets/images/AdobeStock_553721043.jpeg
+assets/images/AdobeStock_746051915_Editorial_Use_Only.jpeg
+assets/images/stocksnap-code-2558220.jpg
+assets/images/pexels-coding-1853305.jpg
+assets/images/stocksnap-laptop-2620118.jpg
+assets/images/tumisu-blog-7101692.jpg
+
+# Unused leftover template reference file (unedited Seonex template, not linked from the site)
+services-2.html

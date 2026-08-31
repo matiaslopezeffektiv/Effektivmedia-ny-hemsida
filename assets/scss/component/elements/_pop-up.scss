@@ -1,0 +1,127 @@
+@use "../../abstracts/index" as *;
+
+.modal {
+    .modal-content {
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+    }
+
+    &.modalRight {
+        .modal-dialog {
+            transform: translate(100%, 0) !important;
+            margin: 0;
+            transition: 0.5s all !important;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            max-width: 100%;
+
+            .modal-content {
+                border: 0;
+                margin: auto;
+                overflow: auto;
+                position: absolute;
+                left: auto;
+                right: 0;
+                bottom: auto;
+                top: 0;
+
+                .icon-close {
+                    i {
+                        font-size: 24px;
+                    }
+
+                }
+            }
+        }
+
+        &.show {
+            .modal-dialog {
+                transform: translate(0, 0) !important;
+            }
+        }
+
+        .modal-filter {
+            overflow: auto;
+        }
+    }
+
+    &.fade {
+        transition: opacity 0.3s linear;
+    }
+}
+
+.pop-up-nav-mobile {
+    padding: 15px;
+
+    .canvas-header {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--color-border-1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-site {
+            max-width: 120px;
+        }
+    }
+}
+
+.modal-sidebar {
+    max-width: 685px;
+    padding: 60px 70px 70px;
+    overflow: auto;
+    height: 100%;
+
+    .sidebar-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        .icon {
+            font-size: 24px;
+            color: var(--digital-marketing-black);
+        }
+    }
+
+    .img {
+        max-width: 115px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .sidebar-content{
+        .title{
+            margin-bottom: 20px;
+        }
+
+        .ff-2{
+            color: var(--paragraph);
+        }
+    }
+}
+
+.overlay-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--digital-marketing-black);
+    visibility: hidden;
+    opacity: 0;
+    @include transition3();
+
+    &.show {
+        visibility: visible;
+        opacity: 0.3;
+    }
+}

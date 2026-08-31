@@ -1,0 +1,54 @@
+@use "../../abstracts/index" as *;
+
+.box-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .icon {
+        width: 65px;
+        height: 65px;
+        background-color: var(--digital-marketing-gray);
+        border: 1px solid var(--color-border-2);
+        border-radius: 14px;
+        @include flex(center, center);
+        @include transition3;
+
+        i {
+            font-size: 35px;
+            color: var(--seo-black);
+            @include transition3;
+        }
+    }
+
+    .box-content {
+        max-width: calc(100% - 85px);
+    }
+
+    &:hover {
+        .icon {
+            border: 1px solid var(--seo-purple);
+            background-color: var(--seo-purple);
+
+            i {
+                color: var(--white);
+            }
+        }
+    }
+
+    &.style-bg-dt-gray {
+        .icon {
+            background-color: var(--digital-marketing-gray);
+            border: 1px solid var(--color-border-2);
+        }
+    }
+
+    &.hover-dt-blue {
+        &:hover {
+            .icon {
+                border: 1px solid var(--digital-marketing-blue);
+                background-color: var(--digital-marketing-blue);
+            }
+        }
+    }
+}

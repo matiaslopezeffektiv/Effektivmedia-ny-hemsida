@@ -1,0 +1,168 @@
+@use "../../abstracts/index" as *;
+
+
+.wg-tab {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-tab-item {
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+
+        a {
+            display: block;
+            padding-bottom: 23px;
+            border-bottom: 1px solid var(--color-border-3);
+
+            &.active {
+                color: var(--white);
+                border-bottom-color: var(--white);
+            }
+        }
+    }
+
+    @include res(md) {
+        .tab-product {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-tab-item {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            a {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.flat-animate-tab {
+    overflow: hidden;
+}
+
+
+.tab-content {
+    position: relative;
+
+    .tab-pane {
+        display: block;
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        transform: translateY(30px);
+        transition-timing-function: ease-in;
+        transition-duration: 0.2s;
+
+        &.active {
+            pointer-events: auto;
+            opacity: 1;
+            visibility: visible;
+            position: relative;
+            z-index: 2;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
+            transition-timing-function: ease-out;
+            transition-duration: 0.3s;
+            transition-delay: 0.3s;
+        }
+    }
+}
+
+.list-price-tabs {
+    padding: 5px;
+    border: 1px solid var(--color-border-8);
+    border-radius: 30px;
+    max-width: max-content;
+    height: 52px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-tab-item {
+        a {
+            @include flex(center, center);
+            border-radius: 30px;
+            color: var(--paragraph);
+            height: 40px;
+
+            &.active {
+                padding: 12px 15px;
+                background-color: var(--seo-marketing-pink);
+                color: var(--white);
+            }
+        }
+
+        &:nth-child(1) {
+            a {
+                &:not(.active) {
+                    margin-left: 12px;
+                }
+            }
+        }
+
+        &:last-child {
+            a {
+                &:not(.active) {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+
+    .badge-sale {
+        padding: 4px 8px;
+        background-color: var(--seo-marketing-purple);
+        border-radius: 10px;
+        color: var(--white);
+    }
+
+    &.style-2 {
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        height: auto;
+
+        ul {
+            gap: 30px;
+        }
+
+        .nav-tab-item {
+            a {
+                @include flex(center, center);
+                height: 39px;
+                border-radius: 10px;
+
+                &.active {
+                    background-color: var(--digital-marketing-blue);
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        .badge-sale {
+            padding: 3px 7px;
+            background-color: var(--digital-marketing-light);
+            color: var(--digital-marketing-black);
+        }
+    }
+}

@@ -1,0 +1,317 @@
+@use "../../abstracts/index" as *;
+
+.according-item {
+    padding: 25px 30px 23px;
+    background: linear-gradient(180deg, #F3F4F6 0%, rgba(243, 244, 246, 0) 100%);
+    border: 1px solid var(--color-border-1);
+    border-radius: 20px;
+
+    .title-according {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            max-width: calc(100% - 50px);
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            @include flex(center, center);
+            background-color: var(--digital-marketing-blue);
+            border-color: var(--digital-marketing-blue);
+            @include transition3;
+
+            i {
+                font-size: 20px;
+                color: var(--white);
+                @include transition3;
+
+            }
+        }
+
+        &.collapsed {
+            border-color: var(--white);
+            color: var(--digital-marketing-black);
+
+            .icon {
+                background-color: var(--white);
+                border: 1px solid var(--color-border-1);
+
+                i {
+                    color: var(--digital-marketing-black);
+                }
+            }
+        }
+    }
+
+    .according-content {
+        margin-top: 19px;
+        margin-bottom: 7px;
+
+        @include res(lg, min) {
+            padding-left: 86px;
+            max-width: 635px;
+        }
+    }
+
+    .list-benefit {
+        margin-bottom: 39px;
+        row-gap: 13px;
+
+        .benefit-item {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: var(--paragraph);
+
+            i {
+                font-size: 24px;
+            }
+        }
+
+        @include res(md, min) {
+            .benefit-item {
+                max-width: 50%;
+                width: 100%;
+
+            }
+        }
+    }
+
+    .image {
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    @include res(md) {
+        padding: 25px 15px !important;
+    }
+
+    &.style-2 {
+        padding: 0 !important;
+        border: unset;
+        background: transparent;
+        width: 100%;
+
+        .left {
+            gap: 15px;
+
+            @include res(lg, min) {
+                gap: 50px;
+            }
+        }
+
+        .icon-left {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            @include flex(center, center);
+            border: 1px solid var(--color-border-1);
+            border-radius: 50%;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 56px;
+                height: 56px;
+                transform: translate(-50%, -50%);
+                background-color: var(--digital-marketing-blue);
+                border-radius: 50%;
+                @include transition3;
+            }
+
+            svg {
+                position: relative;
+                z-index: 3;
+            }
+        }
+
+        .title-according {
+
+            .icon {
+                transform: rotate(90deg);
+            }
+
+            .title {
+                max-width: calc(100% - 85px);
+
+                @include res(xl, min) {
+                    max-width: calc(100% - 120px);
+
+                }
+            }
+
+            &.collapsed {
+                border-color: var(--white);
+                color: var(--digital-marketing-black);
+
+                .icon {
+                    background-color: var(--white);
+                    border: 1px solid var(--color-border-1);
+                    transform: rotate(0);
+
+                    i {
+                        color: var(--digital-marketing-black);
+                    }
+                }
+
+                .icon-left {
+                    &:before {
+                        background-color: var(--digital-marketing-black);
+                    }
+                }
+            }
+        }
+
+
+        .according-content {
+            margin-top: 13px;
+            margin-bottom: 0;
+            padding-left: 85px;
+
+            @include res(lg, min) {
+                padding-left: 120px;
+
+                p {
+                    padding-right: 77px;
+                }
+            }
+        }
+
+        @include res(lg) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+}
+
+.according-item-2 {
+    padding: 25px 25px 23px 50px;
+    border: 1px solid var(--color-border-2);
+    border-radius: 40px;
+
+    &:has(.title-according.collapsed) {
+        border-radius: 70px;
+    }
+
+    .title-according {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text-title {
+            max-width: calc(100% - 65px)
+        }
+
+        .icon {
+            @include flex(center, center);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid var(--seo-purple);
+            background-color: var(--seo-purple);
+
+            span {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 12px;
+                    height: 1.5px;
+                    background-color: var(--white);
+                    border-radius: 999px;
+                    @include transition3;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 1.5px;
+                    height: 12px;
+                    background-color: var(--seo-black);
+                    border-radius: 999px;
+                    opacity: 0;
+                    @include transition3;
+
+                }
+            }
+
+
+        }
+
+        &.collapsed {
+            .icon {
+                background-color: var(--seo-gray-dark);
+                border: 1px solid var(--color-border-1);
+
+                span {
+                    &::before {
+                        background-color: var(--seo-black);
+                    }
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .text {
+        max-width: 599px;
+        color: var(--paragraph);
+        margin-top: 19px;
+        margin-bottom: 11px;
+    }
+
+    @include res(sm) {
+        padding: 15px;
+        border-radius: 20px;
+
+        &:has(.title-according.collapsed) {
+            border-radius: 40px;
+        }
+
+    }
+
+    &.style-icon-bg-blue {
+        .title-according {
+
+            .icon {
+                border: 1px solid var(--digital-marketing-blue);
+                background-color: var(--digital-marketing-blue);
+            }
+
+            &.collapsed {
+                .icon {
+                    background-color: var(--digital-marketing-gray);
+                    border: 1px solid var(--color-border-1);
+
+                }
+            }
+        }
+
+    }
+}
