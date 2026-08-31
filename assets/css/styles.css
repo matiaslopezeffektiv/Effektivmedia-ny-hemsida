@@ -11848,39 +11848,78 @@ form .form-content {
   }
 }
 
-/* Case cards (live iframe previews) */
-.case-iframe-wrap {
-  position: relative;
+/* Case cards (text-only, no screenshot) */
+.case-card {
   display: block;
-  aspect-ratio: 4 / 3;
-  background-color: var(--color-border-1);
-}
-.case-iframe-wrap iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  border: 1px solid var(--color-border-1);
+  border-radius: 20px;
+  padding: 34px 30px;
+  min-height: 260px;
   height: 100%;
-  border: 0;
-  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.case-iframe-wrap::after {
-  content: "";
+.case-card:hover {
+  border-color: var(--digital-marketing-blue);
+  box-shadow: 0 12px 30px rgba(11, 27, 230, 0.08);
+}
+.case-card .monogram {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(8, 11, 30, 0) 55%, rgba(8, 11, 30, 0.75) 100%);
+  top: -34px;
+  right: -6px;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--digital-marketing-gray);
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.case-card .case-card-body {
+  position: relative;
   z-index: 1;
 }
-.case-iframe-caption {
-  position: absolute;
-  left: 16px;
-  bottom: 14px;
-  z-index: 2;
-  color: var(--white);
-  font-size: 13px;
-  font-weight: 600;
+.case-card .meta-project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 18px;
 }
-.project-item.case-item .desc {
-  margin-top: 8px;
+.case-card .meta-project span {
+  padding: 5px 14px;
+  border: 1px solid var(--color-border-7);
+  border-radius: 14px;
+  color: var(--paragraph);
+  font-size: 12px;
+}
+.case-card .name-project {
+  color: var(--digital-marketing-black);
+  display: block;
+  margin-bottom: 10px;
+}
+.case-card .desc {
+  margin-bottom: 22px;
+}
+.case-card .case-card-link {
+  color: var(--digital-marketing-blue);
+  font-size: 14px;
+}
+.case-card .case-card-link i {
+  font-size: 13px;
+  margin-left: 6px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+.case-card:hover .case-card-link {
+  text-decoration: underline;
+}
+.case-card:hover .case-card-link i {
+  -webkit-transform: translate(3px, -3px);
+  transform: translate(3px, -3px);
 }
 
 /*# sourceMappingURL=styles.css.map */
