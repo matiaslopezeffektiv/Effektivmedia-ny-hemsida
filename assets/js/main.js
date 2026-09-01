@@ -14,7 +14,8 @@
  * Parallax Image
  * Go Top
  * Preloader
- * 
+ * Device Switch
+ *
  **/
 
 (function ($) {
@@ -691,6 +692,27 @@
 
 
     // Dom Ready
+    /* Device Switch
+   -------------------------------------------------------------------------*/
+    var deviceSwitch = function () {
+        $(".device-switch").each(function () {
+            var $switch = $(this);
+            var $mockup = $switch.closest(".device-showcase").find(".device-mockup");
+
+            $switch.on("click", ".device-switch-btn", function () {
+                var $btn = $(this);
+                if ($btn.hasClass("is-active")) {
+                    return;
+                }
+
+                $switch.find(".device-switch-btn").removeClass("is-active").attr("aria-pressed", "false");
+                $btn.addClass("is-active").attr("aria-pressed", "true");
+
+                $mockup.toggleClass("is-mobile", $btn.data("view") === "mobile");
+            });
+        });
+    };
+
     $(function () {
         headerFixed();
         handleMobileMenu();
@@ -708,6 +730,7 @@
         parallaxImage();
         goTop();
         preloader();
+        deviceSwitch();
 
     });
 })(jQuery);
