@@ -5319,9 +5319,9 @@ form .form-content {
   margin-bottom: clamp(20px, 2.4vw, 44px);
 }
 .box-quote-solid {
-  background: linear-gradient(135deg, rgba(11, 27, 230, 0.32) 0%, rgba(11, 27, 230, 0.12) 100%);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: 0 8px 32px rgba(4, 8, 40, 0.18);
   display: flex;
@@ -5357,14 +5357,13 @@ form .form-content {
   z-index: 0;
 }
 .box-quote-solid.style-light {
-  background: linear-gradient(135deg, rgba(220, 242, 71, 0.28) 0%, rgba(220, 242, 71, 0.1) 100%);
-  border: 1px solid rgba(220, 242, 71, 0.4);
+  background: rgba(255, 255, 255, 0.16);
 }
 .box-quote-solid.style-light .title {
   color: var(--white);
 }
 .box-quote-solid.style-light .box-icon-decor {
-  color: rgba(220, 242, 71, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 .stat-number-row {
   display: flex;
