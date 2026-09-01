@@ -12462,7 +12462,9 @@ form .form-content {
 }
 .mega-menu-highlight {
   flex: 0 0 240px;
-  background-color: var(--digital-marketing-black);
+  background:
+    linear-gradient(180deg, rgba(8, 11, 30, 0.55) 0%, rgba(8, 11, 30, 0.92) 100%),
+    url("../images/stock/office-handshake.jpeg") center/cover no-repeat;
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
