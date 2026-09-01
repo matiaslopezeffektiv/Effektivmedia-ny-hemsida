@@ -148,7 +148,11 @@
                         .each(function () {
                             const $link = $(this);
                             const linkHref = $link.attr("href") || "#";
-                            const title = $link.text().trim();
+                            const title = (
+                                $link.find(".mega-link-title").length
+                                    ? $link.find(".mega-link-title").text()
+                                    : $link.text()
+                            ).trim();
                             const isActive = $link.hasClass("active");
 
                             if (title !== "") {
