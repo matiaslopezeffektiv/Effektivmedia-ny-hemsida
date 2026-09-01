@@ -12515,12 +12515,16 @@ form .form-content {
 }
 .hero-rotate-word {
   display: inline-block;
-  color: var(--digital-marketing-light);
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  color: var(--digital-marketing-blue);
 }
-.hero-rotate-word.is-swapping {
-  opacity: 0;
-  transform: translateY(10px);
+@media (prefers-reduced-motion: no-preference) {
+  .hero-rotate-word {
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+  .hero-rotate-word.is-swapping {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

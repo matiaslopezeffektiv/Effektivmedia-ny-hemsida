@@ -90,7 +90,7 @@
     /* Rotating headline word
     -------------------------------------------------------------------------*/
     var rotateEl = document.querySelector("[data-rotate-words]");
-    if (rotateEl && !reduceMotion) {
+    if (rotateEl) {
         var rotateWords = rotateEl.getAttribute("data-rotate-words").split(",");
         var rotateIndex = 0;
         if (rotateWords.length > 1) {
@@ -100,7 +100,7 @@
                 window.setTimeout(function () {
                     rotateEl.textContent = rotateWords[rotateIndex];
                     rotateEl.classList.remove("is-swapping");
-                }, 350);
+                }, reduceMotion ? 0 : 350);
             }, 2600);
         }
     }
