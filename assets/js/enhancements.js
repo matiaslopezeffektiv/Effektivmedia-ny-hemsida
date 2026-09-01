@@ -2,6 +2,7 @@
  * Small on-brand interaction polish, kept separate from main.js.
  * - Staggered scroll-reveal for [data-reveal] elements
  * - Count-up animation for [data-count-to] numbers
+ * - Rotating word swap for [data-rotate-words] (hero headline)
  * Respects prefers-reduced-motion and no-ops safely if elements are absent.
  */
 (function () {
@@ -83,6 +84,24 @@
             countEls.forEach(function (el) {
                 countObserver.observe(el);
             });
+        }
+    }
+
+    /* Rotating headline word
+    -------------------------------------------------------------------------*/
+    var rotateEl = document.querySelector("[data-rotate-words]");
+    if (rotateEl && !reduceMotion) {
+        var rotateWords = rotateEl.getAttribute("data-rotate-words").split(",");
+        var rotateIndex = 0;
+        if (rotateWords.length > 1) {
+            window.setInterval(function () {
+                rotateIndex = (rotateIndex + 1) % rotateWords.length;
+                rotateEl.classList.add("is-swapping");
+                window.setTimeout(function () {
+                    rotateEl.textContent = rotateWords[rotateIndex];
+                    rotateEl.classList.remove("is-swapping");
+                }, 350);
+            }, 2600);
         }
     }
 

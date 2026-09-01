@@ -12429,6 +12429,20 @@ form .form-content {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
+  animation: heroKenBurns 24s ease-in-out infinite alternate;
+}
+@keyframes heroKenBurns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-media img {
+    animation: none;
+  }
 }
 .hero-photo-media::after {
   content: "";
@@ -12498,6 +12512,15 @@ form .form-content {
   .hero-photo-content {
     margin-bottom: 40px;
   }
+}
+.hero-rotate-word {
+  display: inline-block;
+  color: var(--digital-marketing-light);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.hero-rotate-word.is-swapping {
+  opacity: 0;
+  transform: translateY(10px);
 }
 
 /*# sourceMappingURL=styles.css.map */
