@@ -12195,13 +12195,13 @@ form .form-content {
 }
 .device-body iframe {
   width: 100%;
-  height: 560px;
+  height: 820px;
   border: 0;
   display: block;
 }
 .device-mockup.is-mobile {
-  max-width: 420px;
-  border-radius: 48px;
+  max-width: 460px;
+  border-radius: 50px;
   border: 12px solid var(--digital-marketing-black);
 }
 .device-mockup.is-mobile .device-chrome-desktop {
@@ -12222,6 +12222,150 @@ form .form-content {
   }
   .device-mockup.is-mobile {
     max-width: 100%;
+  }
+}
+
+/* Case Story Bento (Case pages)
+------------------------------------------------------------------------------ */
+.story-bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.story-bento-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 36px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+.story-bento-number {
+  position: absolute;
+  top: -6px;
+  right: 18px;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 0;
+  font-family: var(--font-2);
+}
+.story-bento-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+}
+.story-bento-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.story-bento-body {
+  position: relative;
+  z-index: 1;
+}
+.story-bento-body h3 {
+  margin-bottom: 12px;
+}
+.story-bento-item.is-challenge {
+  background-color: var(--digital-marketing-black);
+}
+.story-bento-item.is-challenge .story-bento-number {
+  color: rgba(255, 255, 255, 0.08);
+}
+.story-bento-item.is-challenge .story-bento-icon {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+}
+.story-bento-item.is-challenge .story-bento-body h3 {
+  color: var(--white);
+}
+.story-bento-item.is-challenge .story-bento-body p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.story-bento-item.is-solution {
+  background-color: var(--digital-marketing-blue);
+}
+.story-bento-item.is-solution .story-bento-number {
+  color: rgba(255, 255, 255, 0.14);
+}
+.story-bento-item.is-solution .story-bento-icon {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+}
+.story-bento-item.is-solution .story-bento-body h3 {
+  color: var(--white);
+}
+.story-bento-item.is-solution .story-bento-body p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.story-bento-item.is-result {
+  background-color: var(--digital-marketing-light);
+}
+.story-bento-item.is-result .story-bento-number {
+  color: rgba(8, 11, 30, 0.08);
+}
+.story-bento-item.is-result .story-bento-icon {
+  background-color: rgba(8, 11, 30, 0.1);
+  color: var(--digital-marketing-black);
+}
+.story-bento-item.is-result .story-bento-body h3 {
+  color: var(--digital-marketing-black);
+}
+.story-bento-item.is-result .story-bento-body p {
+  color: rgba(8, 11, 30, 0.65) !important;
+}
+@media (max-width: 767px) {
+  .story-bento {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Section Tools Marquee (index, about-us)
+------------------------------------------------------------------------------ */
+.section-tools-marquee {
+  background-color: var(--white);
+  padding: 64px 0;
+}
+.tools-marquee-label {
+  text-align: center;
+  font-family: var(--font-2);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paragraph);
+  margin-bottom: 36px;
+}
+.tools-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 58px;
+}
+.tools-logo-item img {
+  height: 100%;
+  width: auto;
+  max-width: 190px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.25s ease;
+}
+.tools-logo-item:hover img {
+  opacity: 1;
+}
+@media (max-width: 575px) {
+  .tools-logo-item {
+    height: 42px;
+  }
+  .tf-marquee .marquee-item.tools-logo-item {
+    margin-right: 44px;
   }
 }
 
