@@ -10814,6 +10814,7 @@ form .form-content {
 }
 .according-item .list-benefit .benefit-item {
   max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 7px;
