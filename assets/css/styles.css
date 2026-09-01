@@ -12515,7 +12515,7 @@ form .form-content {
 }
 .hero-rotate-word {
   display: inline-block;
-  color: var(--digital-marketing-blue);
+  color: var(--white);
 }
 @media (prefers-reduced-motion: no-preference) {
   .hero-rotate-word {
