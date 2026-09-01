@@ -12347,12 +12347,12 @@ form .form-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 58px;
+  height: 84px;
 }
 .tools-logo-item img {
   height: 100%;
   width: auto;
-  max-width: 190px;
+  max-width: 260px;
   object-fit: contain;
   opacity: 0.85;
   transition: opacity 0.25s ease;
@@ -12362,7 +12362,7 @@ form .form-content {
 }
 @media (max-width: 575px) {
   .tools-logo-item {
-    height: 42px;
+    height: 52px;
   }
   .tf-marquee .marquee-item.tools-logo-item {
     margin-right: 44px;
