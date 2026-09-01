@@ -15,6 +15,7 @@
  * Go Top
  * Preloader
  * Device Switch
+ * Accordion Scroll Fix
  *
  **/
 
@@ -717,6 +718,20 @@
         });
     };
 
+    /* Accordion Scroll Fix
+       Keeps the clicked accordion header in view after a sibling panel
+       collapses above it and shifts the layout up.
+   -------------------------------------------------------------------------*/
+    var accordionScrollFix = function () {
+        $(".according-item .collapse").on("shown.bs.collapse", function () {
+            var $header = $(this).closest(".according-item").find(".header-according");
+            if (!$header.length) return;
+
+            var offset = $header.offset().top - 100;
+            $("html, body").animate({ scrollTop: offset }, 300);
+        });
+    };
+
     $(function () {
         headerFixed();
         handleMobileMenu();
@@ -735,6 +750,7 @@
         goTop();
         preloader();
         deviceSwitch();
+        accordionScrollFix();
 
     });
 })(jQuery);

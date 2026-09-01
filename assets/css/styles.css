@@ -12033,6 +12033,9 @@ form .form-content {
   .device-mockup.is-mobile {
     max-width: 100%;
   }
+  .device-mockup.is-mobile .device-body iframe {
+    height: 560px;
+  }
 }
 
 /* Case Story Bento (Case pages)
