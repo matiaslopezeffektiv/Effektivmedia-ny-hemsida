@@ -5826,6 +5826,7 @@ form .form-content {
 .section-why .image {
   border-radius: 20px;
   overflow: hidden;
+  aspect-ratio: 630 / 530;
 }
 .section-why .image img {
   width: 100%;
