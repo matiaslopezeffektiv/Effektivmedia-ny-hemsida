@@ -11709,85 +11709,6 @@ form .form-content {
   }
 }
 
-/* Case cards (text-only, no screenshot) */
-.case-card {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  background-color: var(--white);
-  border: 1px solid var(--color-border-1);
-  border-radius: 20px;
-  padding: 34px 30px;
-  min-height: 260px;
-  height: 100%;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.case-card:hover {
-  border-color: var(--digital-marketing-blue);
-  box-shadow: 0 12px 30px rgba(11, 27, 230, 0.08);
-}
-.case-card .monogram {
-  position: absolute;
-  top: -34px;
-  right: -6px;
-  font-size: 150px;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--digital-marketing-gray);
-  z-index: 0;
-  pointer-events: none;
-  user-select: none;
-  transition: transform 0.4s ease, color 0.4s ease;
-}
-.case-card:hover .monogram {
-  transform: scale(1.12) rotate(-6deg);
-  color: var(--color-border-7);
-}
-.case-card .case-card-body {
-  position: relative;
-  z-index: 1;
-}
-.case-card .meta-project {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin-bottom: 18px;
-}
-.case-card .meta-project span {
-  padding: 5px 14px;
-  border: 1px solid var(--color-border-7);
-  border-radius: 14px;
-  color: var(--paragraph);
-  font-size: 12px;
-}
-.case-card .name-project {
-  color: var(--digital-marketing-black);
-  display: block;
-  margin-bottom: 10px;
-}
-.case-card .desc {
-  margin-bottom: 22px;
-}
-.case-card .case-card-link {
-  color: var(--digital-marketing-blue);
-  font-size: 14px;
-}
-.case-card .case-card-link i {
-  font-size: 13px;
-  margin-left: 6px;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-}
-.case-card:hover .case-card-link {
-  text-decoration: underline;
-}
-.case-card:hover .case-card-link i {
-  -webkit-transform: translate(3px, -3px);
-  transform: translate(3px, -3px);
-}
-
 /* Case Highlight Cards (Case pages)
 ------------------------------------------------------------------------------ */
 .case-highlights {
@@ -12315,11 +12236,37 @@ form .form-content {
 /* Mobile Menu Takeover (dark)
 ------------------------------------------------------------------------------ */
 #mobileMenu {
-  --bs-offcanvas-bg: var(--digital-marketing-black);
+  --bs-offcanvas-bg: var(--digital-marketing-dark);
   --bs-offcanvas-width: 100%;
   --bs-offcanvas-border-width: 0;
+  overflow: hidden;
+}
+#mobileMenu .img-sharp {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+#mobileMenu .img-sharp.sharp-1 {
+  top: -190px;
+  right: -180px;
+  opacity: 0.55;
+}
+#mobileMenu .img-sharp.sharp-1 .blob-wrapper {
+  width: 300px;
+  height: 300px;
+}
+#mobileMenu .img-sharp.sharp-2 {
+  bottom: -230px;
+  left: -200px;
+  opacity: 0.45;
+}
+#mobileMenu .img-sharp.sharp-2 .blob-wrapper {
+  width: 320px;
+  height: 320px;
 }
 #mobileMenu .pop-up-nav-mobile {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -12526,6 +12473,136 @@ form .form-content {
   .hero-rotate-word.is-swapping {
     opacity: 0;
     transform: translateY(10px);
+  }
+}
+
+/* Case Bento Cards (homepage + cases listing)
+------------------------------------------------------------------------------ */
+.case-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.case-bento-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px;
+  border: 8px solid var(--digital-marketing-dark);
+  background-color: var(--digital-marketing-dark);
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.case-bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -20px rgba(8, 11, 30, 0.35);
+}
+.case-bento-media {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.case-bento-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.case-bento-card:hover .case-bento-media img {
+  transform: scale(1.06);
+}
+.case-bento-logo {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 58%;
+  box-shadow: 0 8px 20px rgba(8, 11, 30, 0.25);
+}
+.case-bento-logo img {
+  height: 18px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+.case-bento-tab {
+  position: relative;
+  z-index: 1;
+  margin-top: -22px;
+  background-color: var(--digital-marketing-dark);
+  border-radius: 20px 20px 0 0;
+  padding: 18px 22px 4px;
+}
+.case-bento-tab .case-bento-name {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+  display: block;
+  margin-bottom: 4px;
+}
+.case-bento-tab .case-bento-industry {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-2);
+  font-size: 13px;
+}
+.case-bento-body {
+  flex: 1;
+  padding: 14px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.case-bento-stats {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.case-bento-stat {
+  flex: 1;
+  color: var(--white);
+  font-family: var(--font-2);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.case-bento-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--digital-marketing-light);
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 14px;
+}
+.case-bento-link i {
+  font-size: 13px;
+  transition: transform 0.3s ease;
+}
+.case-bento-card:hover .case-bento-link i {
+  transform: translate(3px, -3px);
+}
+@media (max-width: 991px) {
+  .case-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .case-bento-grid {
+    grid-template-columns: 1fr;
   }
 }
 
