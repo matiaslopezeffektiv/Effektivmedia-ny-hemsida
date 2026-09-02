@@ -6,30 +6,30 @@ Kontakt: hej@effektivmedia.nu · 010-182 25 90 · Viaredsvägen 32, Borås.
 
 ## Tjänster
 
-- [SEO & Marknadsföring](https://effektivmedia.nu/seo-marknadsforing.html): Teknisk SEO, sökordsanalys, innehåll, länkbyggnad och konverteringsdriven annonsering (Google Ads, Meta Ads).
-- [Webbproduktion & Design](https://effektivmedia.nu/webbproduktion-design.html): Hemsidor och grafisk profil, byggda i bl.a. WordPress med Elementor och Divi.
-- [Utveckling & Kodning](https://effektivmedia.nu/utveckling-kodning.html): Skräddarsydda system, appar och integrationer.
-- [Effektiv Juridik](https://effektivmedia.nu/effektiv-juridik.html): Avtal, avtalsgranskning och GDPR-efterlevnad för företag, till fast pris.
-- [Leadsportalen](https://effektivmedia.nu/leadsportalen.html): Effektiv Medias eget kundportal-system för att följa leads, rankningar och rapporter i realtid.
-- [Signello](https://effektivmedia.nu/signello.html): Mjukvara för att skapa offerter och signera avtal juridiskt bindande med BankID.
-- [Stampello](https://effektivmedia.nu/stampello.html): Digitalt stämpelkort för Apple Wallet och Google Wallet, utan app.
+- [SEO & Marknadsföring](https://effektivmedia.nu/seo-marknadsforing): Teknisk SEO, sökordsanalys, innehåll, länkbyggnad och konverteringsdriven annonsering (Google Ads, Meta Ads).
+- [Webbproduktion & Design](https://effektivmedia.nu/webbproduktion-design): Hemsidor och grafisk profil, byggda i bl.a. WordPress med Elementor och Divi.
+- [Utveckling & Kodning](https://effektivmedia.nu/utveckling-kodning): Skräddarsydda system, appar och integrationer.
+- [Effektiv Juridik](https://effektivmedia.nu/effektiv-juridik): Avtal, avtalsgranskning och GDPR-efterlevnad för företag, till fast pris.
+- [Leadsportalen](https://effektivmedia.nu/leadsportalen): Effektiv Medias eget kundportal-system för att följa leads, rankningar och rapporter i realtid.
+- [Signello](https://effektivmedia.nu/signello): Mjukvara för att skapa offerter och signera avtal juridiskt bindande med BankID.
+- [Stampello](https://effektivmedia.nu/stampello): Digitalt stämpelkort för Apple Wallet och Google Wallet, utan app.
 
 ## Kundcase
 
-- [Alla kundcase](https://effektivmedia.nu/cases.html)
-- [Bromma VVS & Spol AB](https://effektivmedia.nu/case-bromma-vvs.html) — VVS, Stockholm
-- [Carinas Hudvård](https://effektivmedia.nu/case-carinas-hudvard.html) — Hudvård & skönhet
-- [Keenans Trädvård](https://effektivmedia.nu/case-keenans-tradvard.html) — Trädvård, Halmstad
-- [Rennano](https://effektivmedia.nu/case-rennano.html) — Städ
-- [Sikfors Bygg](https://effektivmedia.nu/case-sikfors-bygg.html) — Bygg
-- [AB Trädgårdstjänst i Borås](https://effektivmedia.nu/case-ab-tradgardstjanst-boras.html) — Trädgård, Borås
-- [Hair By Awin / Beauty By Awin](https://effektivmedia.nu/case-hair-by-awin.html) — Skönhetssalong
-- [KH Elkraft](https://effektivmedia.nu/case-kh-elkraft.html) — Elektriker, Mullsjö
-- [Meatwood House Smoke Grill](https://effektivmedia.nu/case-meatwood-house-smoke-grill.html) — Restaurang
-- [TMT Svets AB](https://effektivmedia.nu/case-tmt-svets.html) — Svets, Göteborg
+- [Alla kundcase](https://effektivmedia.nu/cases)
+- [Bromma VVS & Spol AB](https://effektivmedia.nu/case-bromma-vvs) — VVS, Stockholm
+- [Carinas Hudvård](https://effektivmedia.nu/case-carinas-hudvard) — Hudvård & skönhet
+- [Keenans Trädvård](https://effektivmedia.nu/case-keenans-tradvard) — Trädvård, Halmstad
+- [Rennano](https://effektivmedia.nu/case-rennano) — Städ
+- [Sikfors Bygg](https://effektivmedia.nu/case-sikfors-bygg) — Bygg
+- [AB Trädgårdstjänst i Borås](https://effektivmedia.nu/case-ab-tradgardstjanst-boras) — Trädgård, Borås
+- [Hair By Awin / Beauty By Awin](https://effektivmedia.nu/case-hair-by-awin) — Skönhetssalong
+- [KH Elkraft](https://effektivmedia.nu/case-kh-elkraft) — Elektriker, Mullsjö
+- [Meatwood House Smoke Grill](https://effektivmedia.nu/case-meatwood-house-smoke-grill) — Restaurang
+- [TMT Svets AB](https://effektivmedia.nu/case-tmt-svets) — Svets, Göteborg
 
 ## Övrigt
 
-- [Om oss](https://effektivmedia.nu/about-us.html)
-- [Vanliga frågor](https://effektivmedia.nu/faqs.html)
-- [Kontakt](https://effektivmedia.nu/contact.html)
+- [Om oss](https://effektivmedia.nu/about-us)
+- [Vanliga frågor](https://effektivmedia.nu/faqs)
+- [Kontakt](https://effektivmedia.nu/contact)
