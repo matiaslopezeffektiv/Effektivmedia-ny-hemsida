@@ -682,6 +682,12 @@
                 jQuery("html, body").animate({ scrollTop: 0 }, duration);
                 return false;
             });
+            jQuery(".progress-wrap").on("keydown", function (event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    jQuery("html, body").animate({ scrollTop: 0 }, duration);
+                }
+            });
         }
     };
 

@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <title>Sidan hittades inte – Effektiv Media</title>
     <meta name="author" content="Effektiv Media">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Sidan du letar efter kunde inte hittas. Gå tillbaka till startsidan för Effektiv Media.">
     <meta property="og:title" content="Sidan hittades inte – Effektiv Media">
@@ -187,13 +187,13 @@
                             </a>
                         </div>
                         <div class="d-none d-xl-block">
-                            <a href="#pop-up-sidebar" data-bs-toggle="modal" class="tf-btn-sidebar">
+                            <a href="#pop-up-sidebar" data-bs-toggle="modal" class="tf-btn-sidebar" aria-label="Öppna sidopanel">
                                 <i class="icon-union"></i>
                             </a>
                         </div>
 
                         <div class="d-xl-none">
-                            <a href="#mobileMenu" data-bs-toggle="offcanvas" class=" mobile-button">
+                            <a href="#mobileMenu" data-bs-toggle="offcanvas" class=" mobile-button" aria-label="Öppna meny">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -339,18 +339,13 @@
                                     </p>
                                     <ul class="d-flex g-10" style="align-items:flex-start;">
                                         <li>
-                                            <a href="https://www.facebook.com/profile.php?id=61573616109763"
-                                                target="_blank" rel="noopener" class="btn-add"><i
-                                                    class="icon-fb"></i></a>
+                                            <a href="https://www.facebook.com/profile.php?id=61573616109763" target="_blank" rel="noopener" class="btn-add" aria-label="Effektiv Media på Facebook"><i class="icon-fb"></i></a>
                                         </li>
                                         <li>
-                                            <a href="https://www.instagram.com/effektivmedia/" target="_blank"
-                                                rel="noopener" class="btn-add"><i class="icon-ig"></i></a>
+                                            <a href="https://www.instagram.com/effektivmedia/" target="_blank" rel="noopener" class="btn-add" aria-label="Effektiv Media på Instagram"><i class="icon-ig"></i></a>
                                         </li>
                                         <li>
-                                            <a href="https://se.linkedin.com/company/effektiv-media-group"
-                                                target="_blank" rel="noopener" class="btn-add"><i
-                                                    class="icon-in"></i></a>
+                                            <a href="https://se.linkedin.com/company/effektiv-media-group" target="_blank" rel="noopener" class="btn-add" aria-label="Effektiv Media på LinkedIn"><i class="icon-in"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -432,7 +427,7 @@
                     <img src="./assets/images/logo/effektivmedia-logo-white.png" alt="Effektiv Media"
                         style="height:32px;width:auto;">
                 </a>
-                <span class="icon icon-close" data-bs-dismiss="offcanvas"></span>
+                <button type="button" class="icon icon-close" data-bs-dismiss="offcanvas" aria-label="Stäng meny"></button>
             </div>
             <div class="canvas-body">
                 <div class="mb-content-top">
@@ -463,7 +458,7 @@
                         <img src="./assets/images/logo/effektivmedia-logo-black.png" alt="Effektiv Media"
                             style="height:32px;width:auto;">
                     </a>
-                    <span class="icon icon-close-popup" data-bs-dismiss="modal"><i class="icon-x-circle"></i></span>
+                    <button type="button" class="icon icon-close-popup" data-bs-dismiss="modal" aria-label="Stäng"><i class="icon-x-circle"></i></button>
                 </div>
                 <div class="sidebar-content mb-70">
                     <p class="h5 title fw-6">
@@ -502,7 +497,7 @@
     <!-- ./Sidebar -->
 
     <!-- Go-top -->
-    <div class="progress-wrap">
+    <div class="progress-wrap" role="button" tabindex="0" aria-label="Till toppen">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
                 style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 277.672;">
