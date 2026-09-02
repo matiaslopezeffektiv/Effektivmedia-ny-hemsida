@@ -1,2 +1,2 @@
-/* greek-ext */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap');
+/* Figtree & Manrope are loaded directly via <link> in <head> (with preconnect)
+   instead of @import, to avoid an extra render-blocking round trip. */
