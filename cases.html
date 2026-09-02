@@ -576,6 +576,7 @@
                         <li><a href="contact" class="color-white ff-2">Kontakta oss</a></li>
                         <li><a href="faqs" class="color-white ff-2">FAQ</a></li>
                         <li><a href="integritetspolicy" class="color-white ff-2">Integritetspolicy</a></li>
+                        <li><button type="button" class="color-white ff-2 cookie-settings-link" data-open-cookie-settings>Cookie-inställningar</button></li>
                     </ul>
                     <span class="color-text-3 text-center ff-2">Copyright © 2026 <span
                             class="fw-6">Effektiv Media</span>. Alla
@@ -707,6 +708,22 @@
     </div>
     <!-- /.go-top -->
 
+    <!-- Cookie banner -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookiemeddelande" hidden>
+        <div class="cookie-banner-brand">
+            <img src="./assets/images/logo/effektivmedia-mark-badge.png" alt="" aria-hidden="true" class="cookie-banner-logo" width="256" height="256">
+            <span>Effektiv Media</span>
+        </div>
+        <p class="cookie-banner-text">
+            Vi använder endast cookies som är nödvändiga för att sidan ska fungera tekniskt - inga analys- eller marknadsföringscookies just nu. Läs mer i vår <a href="integritetspolicy">integritetspolicy</a>.
+        </p>
+        <div class="cookie-banner-actions">
+            <button type="button" class="cookie-banner-necessary">Endast nödvändiga</button>
+            <button type="button" class="cookie-banner-accept">Jag förstår</button>
+        </div>
+    </div>
+    <!-- /Cookie banner -->
+
 
     <!-- Javascript -->
     <script src="./assets/js/plugin/bootstrap.min.js" defer></script>
@@ -719,6 +736,7 @@
     <script src="./assets/js/plugin/ScrollSmooth.js" defer></script>    <script src="./assets/js/plugin/plugin.min.js" defer></script>
 
     <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/cookie-consent.js" defer></script>
     <script src="./assets/js/enhancements.js" defer></script>
 
 </body>
