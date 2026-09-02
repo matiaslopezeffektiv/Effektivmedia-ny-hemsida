@@ -7221,7 +7221,10 @@ form .form-content {
 }
 @media (max-width: 767px) {
   .testimonial-card {
-    padding: 30px 15px;
+    padding: 30px 20px;
+  }
+  .testimonial-card .icon {
+    margin-left: 0;
   }
 }
 
