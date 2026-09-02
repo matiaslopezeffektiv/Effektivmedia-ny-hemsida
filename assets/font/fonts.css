@@ -1,2 +1,0 @@
-/* Figtree & Manrope are loaded directly via <link> in <head> (with preconnect)
-   instead of @import, to avoid an extra render-blocking round trip. */
