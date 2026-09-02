@@ -12543,12 +12543,18 @@ form .form-content {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(
-    180deg,
-    rgba(8, 11, 30, 0.5) 0%,
-    rgba(8, 11, 30, 0.12) 42%,
-    rgba(8, 11, 30, 0.55) 100%
-  );
+  background: radial-gradient(
+      ellipse 60% 65% at 50% 50%,
+      rgba(8, 11, 30, 0.5) 0%,
+      rgba(8, 11, 30, 0.05) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8, 11, 30, 0.35) 0%,
+      rgba(8, 11, 30, 0.08) 30%,
+      rgba(8, 11, 30, 0.15) 60%,
+      rgba(8, 11, 30, 0.5) 100%
+    );
   transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
 }
 .case-bento-card:hover .case-bento-media::before {
@@ -12562,22 +12568,18 @@ form .form-content {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.96);
-  border-radius: 14px;
-  padding: 12px 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 68%;
-  box-shadow: 0 10px 26px rgba(8, 11, 30, 0.3);
-  transition: transform 0.35s ease, background-color 0.35s ease;
+  max-width: 74%;
+  filter: drop-shadow(0 6px 18px rgba(8, 11, 30, 0.45));
+  transition: transform 0.35s ease;
 }
 .case-bento-card:hover .case-bento-logo {
-  transform: translate(-50%, -50%) scale(1.06);
-  background-color: var(--white);
+  transform: translate(-50%, -50%) scale(1.08);
 }
 .case-bento-logo img {
-  height: 26px;
+  height: 46px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
