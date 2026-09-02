@@ -396,19 +396,23 @@
                                         Hör av dig idag
                                     </h2>
                                 </div>
-                                <form action="#" class="form-contact">
+                                <form action="#" class="form-contact" id="contactForm" novalidate>
+                                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                                        <label for="website">Lämna detta fält tomt</label>
+                                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                                    </div>
                                     <div class="cols tf-grid-layout sm-col-2 g-30 mb-30">
                                         <fieldset>
                                             <label class="fw-6 ff-2 letter-space--2 color-dt-black" for="name">
                                                 Namn
                                             </label>
-                                            <input type="text" id="name" required>
+                                            <input type="text" id="name" name="name" required>
                                         </fieldset>
                                         <fieldset>
                                             <label class="fw-6 ff-2 letter-space--2 color-dt-black" for="email">
                                                 E-postadress
                                             </label>
-                                            <input type="email" id="email" required>
+                                            <input type="email" id="email" name="email" required>
                                         </fieldset>
                                     </div>
                                     <div class="cols tf-grid-layout sm-col-2 g-30 mb-30">
@@ -416,13 +420,13 @@
                                             <label class="fw-6 ff-2 letter-space--2 color-dt-black" for="phone">
                                                 Telefon
                                             </label>
-                                            <input type="number" id="phone" required>
+                                            <input type="tel" id="phone" name="phone" required>
                                         </fieldset>
                                         <fieldset>
                                             <label class="fw-6 ff-2 letter-space--2 color-dt-black" for="subject">
                                                 Ämne
                                             </label>
-                                            <input type="text" id="subject" required>
+                                            <input type="text" id="subject" name="subject" required>
                                         </fieldset>
                                     </div>
                                     <div class="cols tf-grid-layout sm-col-2 g-30 mb-30">
@@ -444,13 +448,78 @@
                                         <label class="fw-6 ff-2 letter-space--2 color-dt-black" for="mess">
                                             Meddelande
                                         </label>
-                                        <textarea name="mess" id="mess"></textarea>
+                                        <textarea name="mess" id="mess" required></textarea>
                                     </fieldset>
-                                    <button class="tf-btn style-big style-color-dt-blue">
+                                    <button class="tf-btn style-big style-color-dt-blue" type="submit" id="contactSubmit">
                                         <span class="text-btn">Skicka meddelande</span>
                                         <span class="icon-btn"><i class="icon-arrow-up-right"></i></span>
                                     </button>
+                                    <p id="contactFormStatus" role="status" style="margin-top:16px;font-weight:600;"></p>
                                 </form>
+                                <script>
+                                (function () {
+                                    var form = document.getElementById("contactForm");
+                                    if (!form) return;
+                                    var status = document.getElementById("contactFormStatus");
+                                    var submitBtn = document.getElementById("contactSubmit");
+                                    var submitLabel = submitBtn.querySelector(".text-btn");
+                                    var defaultLabel = submitLabel.textContent;
+
+                                    form.addEventListener("submit", function (event) {
+                                        event.preventDefault();
+
+                                        if (!form.checkValidity()) {
+                                            form.reportValidity();
+                                            return;
+                                        }
+
+                                        var payload = {
+                                            website: document.getElementById("website").value,
+                                            name: document.getElementById("name").value,
+                                            email: document.getElementById("email").value,
+                                            phone: document.getElementById("phone").value,
+                                            subject: document.getElementById("subject").value,
+                                            callDate: document.getElementById("call-date").value,
+                                            callTime: document.getElementById("call-time").value,
+                                            message: document.getElementById("mess").value
+                                        };
+
+                                        submitBtn.setAttribute("disabled", "disabled");
+                                        submitLabel.textContent = "Skickar...";
+                                        status.style.color = "";
+                                        status.textContent = "";
+
+                                        fetch("/api/contact", {
+                                            method: "POST",
+                                            headers: { "Content-Type": "application/json" },
+                                            body: JSON.stringify(payload)
+                                        })
+                                            .then(function (res) {
+                                                return res.json().then(function (data) {
+                                                    return { ok: res.ok, data: data };
+                                                });
+                                            })
+                                            .then(function (result) {
+                                                if (result.ok && result.data.ok) {
+                                                    status.style.color = "var(--digital-marketing-blue)";
+                                                    status.textContent = "Tack! Ditt meddelande är skickat, vi hör av oss snart.";
+                                                    form.reset();
+                                                } else {
+                                                    status.style.color = "#d33";
+                                                    status.textContent = (result.data && result.data.error) || "Något gick fel. Försök igen om en stund.";
+                                                }
+                                            })
+                                            .catch(function () {
+                                                status.style.color = "#d33";
+                                                status.textContent = "Något gick fel. Försök igen om en stund.";
+                                            })
+                                            .finally(function () {
+                                                submitBtn.removeAttribute("disabled");
+                                                submitLabel.textContent = defaultLabel;
+                                            });
+                                    });
+                                })();
+                                </script>
                             </div>
                         </div>
                         <div class="col-md-6">
