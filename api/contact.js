@@ -1,4 +1,4 @@
-const TO_EMAIL = "hej@effektivmedia.nu";
+const TO_EMAILS = ["hej@effektivmedia.nu", "matias@effektivmedia.nu"];
 const FROM_EMAIL = "Effektiv Media <formular@effektivmedia.nu>";
 
 function escapeHtml(value) {
@@ -75,7 +75,7 @@ module.exports = async (req, res) => {
       },
       body: JSON.stringify({
         from: FROM_EMAIL,
-        to: [TO_EMAIL],
+        to: TO_EMAILS,
         reply_to: email,
         subject: subject ? `Kontaktformulär: ${subject}` : `Nytt meddelande från ${name}`,
         html,
