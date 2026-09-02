@@ -3849,6 +3849,35 @@ form .form-content {
   padding: 60px 70px 70px;
   overflow: auto;
   height: 100%;
+  background-color: var(--digital-marketing-dark);
+}
+.modal-sidebar .img-sharp {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+.modal-sidebar .img-sharp.sharp-1 {
+  top: -190px;
+  right: -180px;
+  opacity: 0.55;
+}
+.modal-sidebar .img-sharp.sharp-1 .blob-wrapper {
+  width: 340px;
+  height: 340px;
+}
+.modal-sidebar .img-sharp.sharp-2 {
+  bottom: -220px;
+  left: -200px;
+  opacity: 0.45;
+}
+.modal-sidebar .img-sharp.sharp-2 .blob-wrapper {
+  width: 340px;
+  height: 340px;
+}
+.modal-sidebar .sidebar-header,
+.modal-sidebar .sidebar-content {
+  position: relative;
+  z-index: 1;
 }
 .modal-sidebar .sidebar-header {
   display: flex;
@@ -3858,7 +3887,7 @@ form .form-content {
 }
 .modal-sidebar .sidebar-header .icon {
   font-size: 24px;
-  color: var(--digital-marketing-black);
+  color: var(--white);
 }
 .modal-sidebar .img {
   max-width: 115px;
@@ -3870,9 +3899,17 @@ form .form-content {
 }
 .modal-sidebar .sidebar-content .title {
   margin-bottom: 20px;
+  color: var(--white);
 }
 .modal-sidebar .sidebar-content .ff-2 {
-  color: var(--paragraph);
+  color: rgba(255, 255, 255, 0.65);
+}
+.modal-sidebar .contact-footer-item .icon-contact {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.modal-sidebar .contact-footer-item .text,
+.modal-sidebar .contact-footer-item .text a {
+  color: var(--white);
 }
 
 .overlay-filter {
