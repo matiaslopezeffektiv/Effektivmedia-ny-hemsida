@@ -1,0 +1,35 @@
+# Effektiv Media
+
+> Effektiv Media är en digital byrå i Borås, Sverige, som samlar SEO & marknadsföring, webbproduktion & design, utveckling & kodning samt juridik (Effektiv Juridik) under ett tak. Vi hjälper svenska företag att synas, växa och digitalisera sitt företagande utan att behöva flera olika leverantörer.
+
+Kontakt: hej@effektivmedia.nu · 010-182 25 90 · Viaredsvägen 32, Borås.
+
+## Tjänster
+
+- [SEO & Marknadsföring](https://effektivmedia.nu/seo-marknadsforing.html): Teknisk SEO, sökordsanalys, innehåll, länkbyggnad och konverteringsdriven annonsering (Google Ads, Meta Ads).
+- [Webbproduktion & Design](https://effektivmedia.nu/webbproduktion-design.html): Hemsidor och grafisk profil, byggda i bl.a. WordPress med Elementor och Divi.
+- [Utveckling & Kodning](https://effektivmedia.nu/utveckling-kodning.html): Skräddarsydda system, appar och integrationer.
+- [Effektiv Juridik](https://effektivmedia.nu/effektiv-juridik.html): Avtal, avtalsgranskning och GDPR-efterlevnad för företag, till fast pris.
+- [Leadsportalen](https://effektivmedia.nu/leadsportalen.html): Effektiv Medias eget kundportal-system för att följa leads, rankningar och rapporter i realtid.
+- [Signello](https://effektivmedia.nu/signello.html): Mjukvara för att skapa offerter och signera avtal juridiskt bindande med BankID.
+- [Stampello](https://effektivmedia.nu/stampello.html): Digitalt stämpelkort för Apple Wallet och Google Wallet, utan app.
+
+## Kundcase
+
+- [Alla kundcase](https://effektivmedia.nu/cases.html)
+- [Bromma VVS & Spol AB](https://effektivmedia.nu/case-bromma-vvs.html) — VVS, Stockholm
+- [Carinas Hudvård](https://effektivmedia.nu/case-carinas-hudvard.html) — Hudvård & skönhet
+- [Keenans Trädvård](https://effektivmedia.nu/case-keenans-tradvard.html) — Trädvård, Halmstad
+- [Rennano](https://effektivmedia.nu/case-rennano.html) — Städ
+- [Sikfors Bygg](https://effektivmedia.nu/case-sikfors-bygg.html) — Bygg
+- [AB Trädgårdstjänst i Borås](https://effektivmedia.nu/case-ab-tradgardstjanst-boras.html) — Trädgård, Borås
+- [Hair By Awin / Beauty By Awin](https://effektivmedia.nu/case-hair-by-awin.html) — Skönhetssalong
+- [KH Elkraft](https://effektivmedia.nu/case-kh-elkraft.html) — Elektriker, Mullsjö
+- [Meatwood House Smoke Grill](https://effektivmedia.nu/case-meatwood-house-smoke-grill.html) — Restaurang
+- [TMT Svets AB](https://effektivmedia.nu/case-tmt-svets.html) — Svets, Göteborg
+
+## Övrigt
+
+- [Om oss](https://effektivmedia.nu/about-us.html)
+- [Vanliga frågor](https://effektivmedia.nu/faqs.html)
+- [Kontakt](https://effektivmedia.nu/contact.html)
