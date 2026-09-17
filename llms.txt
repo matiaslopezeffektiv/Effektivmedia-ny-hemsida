@@ -30,6 +30,6 @@ Kontakt: hej@effektivmedia.nu · 010-182 25 90 · Viaredsvägen 32, Borås.
 
 ## Övrigt
 
-- [Om oss](https://effektivmedia.nu/about-us)
-- [Vanliga frågor](https://effektivmedia.nu/faqs)
-- [Kontakt](https://effektivmedia.nu/contact)
+- [Om oss](https://effektivmedia.nu/om-oss)
+- [Vanliga frågor](https://effektivmedia.nu/vanliga-fragor)
+- [Kontakt](https://effektivmedia.nu/kontakt)
